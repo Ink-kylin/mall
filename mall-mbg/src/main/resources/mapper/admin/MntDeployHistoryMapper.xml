@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mall.admin.mapper.MntDeployHistoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mall.mbg.pojo.admin.MntDeployHistory">
+        <id column="history_id" property="historyId" />
+        <result column="app_name" property="appName" />
+        <result column="deploy_date" property="deployDate" />
+        <result column="deploy_user" property="deployUser" />
+        <result column="ip" property="ip" />
+        <result column="deploy_id" property="deployId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        history_id, app_name, deploy_date, deploy_user, ip, deploy_id
+    </sql>
+
+</mapper>

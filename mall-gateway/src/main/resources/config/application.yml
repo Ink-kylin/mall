@@ -1,0 +1,14 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: test
+#          uri: https://www.baidu.com
+#          predicates:
+#            - Query=url,baidu
+#        - id: admin
+#          uri: lb://mall-admin
+#          filters:
+#            - RewritePath=/api/(?<segment>.*),/product/$\{segment}
+#          predicates:
+#            - Path=/api/**

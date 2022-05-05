@@ -1,0 +1,11 @@
+
+
+### 测试三级分类查询
+GET http://localhost:9080/pmsCategory/getTree
+
+### 测试品牌列表查询
+GET http://localhost:9080/pmsBrand/getList?pageSize=2
+
+###
+
+GET http://localhost:9080/pmsBrand/getSingle/1

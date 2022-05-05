@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: albert
+    password: kylin
+    type: com.mysql.cj.jdbc.MysqlDataSource
+    url: jdbc:mysql://127.0.0.1:3306/mall_admin?characterEncoding=utf8&connectTimeout=1000&socketTimeout=100002&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true

@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: mall-thirdParty
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: ada45099-9ece-462d-8d37-6645bd771133
+        group: DEV
+        extension-configs:
+          - dataId: oss.yaml
+            group: DEV
+            refresh: true
+
+  profiles:
+    active: dev
+server:
+  port: 10000
+  servlet:
+    context-path: /thirdParty

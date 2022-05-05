@@ -1,0 +1,14 @@
+###
+
+GET http://localhost:9080/pmsCategory/getTree
+
+
+### 新增分类
+
+POST http://localhost:9080/pmsCategory/appendNode
+Content-Type: application/json
+
+{
+  "name": "",
+  "parentCid": 1
+}

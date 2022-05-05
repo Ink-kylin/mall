@@ -1,0 +1,26 @@
+###
+
+POST localhost:9200/website/blog/?pretty
+Content-Type: application/json
+
+
+{
+  "title": "My second blog entry",
+  "text": "Still trying this out...",
+  "date": "2014/01/01"
+}
+
+
+###
+
+GET http://localhost:9200/website/blog/5kuHMIABx7XJbHskgg3h
+
+
+
+### 批量操作 bulk
+POST localhost:9200/_bulk?pretty
+Content-Type: application/json
+
+
+###
+

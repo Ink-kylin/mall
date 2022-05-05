@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: mall-admin
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: 874e72ca-8ac1-4964-b773-242359ec74bb
+        extension-configs:
+          - dataId: datasource.yaml
+            group: MALL_ADMIN
+            refresh: true
+
+  profiles:
+    active: dev
+
+server:
+  port: 9000
+
